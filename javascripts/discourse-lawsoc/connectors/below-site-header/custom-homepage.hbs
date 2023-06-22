@@ -1,0 +1,38 @@
+{{mount-widget widget="homepage-banner-widget"}}
+{{#if displayCustomCategories}}
+  {{#if (theme-setting 'featured_topics_hide_image')}}
+    <div class="wrap hide-images featured-banner">
+      {{featured-homepage-topics}}
+    </div>
+  {{else}}
+    <div class="wrap featured-banner">
+      {{featured-homepage-topics}}
+    </div>
+  {{/if}}
+{{/if}}
+{{mount-widget widget="new-user-banner"}}
+{{#if displayCustomCategories}}
+<div class="homepage-categories">
+  <div class="custom-homepage-categories wrap"> 
+    <div class="homepage-category-boxes">
+      {{#each categoryName as |c|}}
+      <a href="/c/{{c.slug}}" class="box">
+        <div class="homepage-category-box">
+          {{#if c.uploaded_logo}}
+          <div class="category-image-wrapper">  
+            <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />               
+          </div>              
+          {{/if}}
+          <div class="card-body">
+            <h2>{{#if c.read_restricted}}{{d-icon 'lock'}}{{/if}}{{c.name}}</h2>
+            <div class="description">
+              {{{c.description}}}
+            </div>
+          </div>
+        </div>
+      </a>
+      {{/each}}
+    </div>
+  </div> 
+</div>
+{{/if}}

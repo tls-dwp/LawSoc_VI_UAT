@@ -1,0 +1,113 @@
+.featured-topic-wrapper {
+	border-bottom: none;
+	margin-top: 70px;
+	margin-bottom: 70px;
+
+	.featured-topics .featured-topic {
+		justify-content: flex-start;
+
+		box-sizing: border-box;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 28px 28px 18px;
+		gap: 8px;
+		width: 100%;
+		height: 260px;
+		background: #FFFFFF;
+		border-width: 4px 0.5px 0.5px 0.5px;
+		border-style: solid;
+		border-color: #004D71;
+		align-self: stretch;
+
+
+		.title {
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			color: $primary;
+			font-weight: 400;
+			font-size: 1.5rem;
+			text-align: left;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 32px;
+			justify-content: space-between;
+			height: 180px;
+
+			&::after {
+				/*content: '#{$featured_topics_CTA_text} \e904';*/
+				content: '#{$featured_topics_CTA_text} \203A';
+				margin-top: 20px;
+				color: $tertiary;
+				font-size: 1rem;
+				font-family: tlsIcons, 'Open Sans', sans-serif;
+				font-weight: 600;
+			}
+		}
+
+		&:hover {
+			.title::after {
+				/*content: '#{$featured_topics_CTA_text} \e903';*/
+				content: '#{$featured_topics_CTA_text} \203A';
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.featured-topic-wrapper {
+	display: none;
+}
+
+.featured-banner .featured-topic-wrapper {
+	display: block;
+}
+
+.hide-images {
+	.featured-topic-wrapper {
+		.featured-topics {
+			justify-content: space-between;
+
+			.featured-topic {
+				flex-basis: unset;
+				min-width: 165px;
+				max-width: 33%;
+				flex-grow: 0;
+				flex-shrink: 1;
+
+				.featured-topic-image {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.featured-topic-wrapper .featured-topics .featured-topic {
+	display: flex !important;
+	max-width: 100%;
+
+	.featured-topic-image {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: $small-width) {
+	.featured-topic-wrapper {
+		margin-top: 36px;
+		margin-bottom: 36px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.featured-topic-wrapper .featured-topics {
+		flex-direction: column;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.hide-images .featured-topic-wrapper .featured-topics .featured-topic {
+		max-width: 100%;
+	}
+}

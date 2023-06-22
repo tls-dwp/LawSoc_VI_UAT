@@ -1,0 +1,35 @@
+homepage_banner_header_title:
+  default: ""
+  description: "A title for the homepage banner"
+homepage_banner_header_subtitle:
+  default: ""
+  description: "A subtitle for the hompage banner"
+homepage_banner_header_text:
+  default: ""
+  description: "This is the text that will appear over the homepage banner."
+featured_topics_hide_image:
+  type: bool
+  default: true
+  description: "Hide the images on the featured topics banner"
+featured_topics_CTA_text:
+  default: "FIND OUT MORE"
+  description: "The text to use as the CTA on the featured topics banner"
+new_user_banner_title:
+  default: ""
+  description: "New user banner title"
+new_user_banner_text:
+  default: ""
+  description: "Text that appears under the title on the new user banner"
+new_user_banner_buttons:
+  type: list
+  default: ""
+  description: "Comma delimited in this order: button text, link title, URL, target<br><b>Button text:</b> The text for the button<br><b>Link title:</b> the text that shows when the button is hovered<br><b>URL:</b> The path for the link (can be relative)<br><b>Target:</b> blank = opens in a new tab, self = opens in the same tab"
+new_user_banner_user_field_index:
+  type: integer
+  default: 1
+  min: 0
+  description: "the index of the user field that controls whether the new user banner is shown"
+categories_banner_category_ids:
+  type: list
+  default: ""
+  description: "The IDs of the categories to display on the category banner"

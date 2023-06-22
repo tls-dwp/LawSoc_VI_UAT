@@ -1,0 +1,13 @@
+.list-controls {
+	.combo-box {
+		.combo-box-header {
+			color: $tertiary;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.nav-pills>li a.active {
+	background: $tertiary;
+	color: $secondary;
+}

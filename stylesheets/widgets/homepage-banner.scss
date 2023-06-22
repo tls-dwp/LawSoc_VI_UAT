@@ -1,0 +1,65 @@
+.homepage-banner-container {
+	width: 100%;
+	box-sizing: border-box;
+	background: url($homepageBanner);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0 16px;
+
+	.homepage-banner-inner {
+		padding: 50px 0;
+		max-width: 1130px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.homepage-banner-text {
+		padding: 40px 30px 30px;
+		width: 565px;
+		box-sizing: border-box;
+		background: #ffffff;
+		box-shadow: 0px 0px 4px 0px rgba($primary, 0.3);
+
+		.title {
+			font-weight: 700;
+		}
+
+		.subtitle {
+			max-width: 240px;
+			font-style: italic;
+			font-weight: 400;
+		}
+
+		p {
+			color: $tertiary;
+			font-size: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: $large-width) {
+	.homepage-banner-container {
+		.homepage-banner-inner {
+			max-width: 930px;
+		}
+
+		.homepage-banner-text {
+			width: 465px;
+		}
+	}
+}
+
+@media screen and (max-width: $small-width) {
+	.homepage-banner-container {
+		padding: 16px 15px;
+		background: $dark-green;
+
+		.homepage-banner-inner {
+			width: 100%;
+		}
+
+		.homepage-banner-text {
+			width: 100%;
+		}
+	}
+}

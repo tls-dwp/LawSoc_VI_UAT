@@ -1,0 +1,31 @@
+@font-face {
+	font-family: tlsIcons;
+	src: url($tlsIcons);
+}
+
+@media screen and (max-width: $small-width) {
+	body {
+		font-size: var(--font-down-1);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Tinos', sans-serif;
+}
+
+h1 {
+	font-size: 2.488rem;
+}
+
+h2 {
+	font-size: 1.728rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
