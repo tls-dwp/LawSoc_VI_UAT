@@ -1,6 +1,6 @@
 {
 	"name": "LawSoc_VI_UAT",
-	"component": false,
+	"component": true,
 	"license_url": null,
 	"about_url": null,
 	"authors": null,
